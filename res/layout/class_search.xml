@@ -242,6 +242,12 @@
             android:layout_height="wrap_content"
             android:text="@string/cs_search_label" />
 
+        <ProgressBar
+            android:id="@+id/cs_banner_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     </TableRow>
 
 </TableLayout>

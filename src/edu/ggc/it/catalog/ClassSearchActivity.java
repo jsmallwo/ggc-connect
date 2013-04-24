@@ -38,6 +38,7 @@ import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -77,6 +78,7 @@ public class ClassSearchActivity extends Activity {
 	private AutoCompleteTextView instructorInput;
 	private TableRow searchRow;
 	private Button searchButton;
+	private ProgressBar bannerProgress;
 	private Map<String, String> terms;
 	private CourseDataSource courseDS;
 	private TextView focusHolder;
@@ -125,6 +127,7 @@ public class ClassSearchActivity extends Activity {
 		instructorInput = (AutoCompleteTextView)findViewById(R.id.cs_instructor_input);
 		searchRow = (TableRow)findViewById(R.id.cs_search_row);
 		searchButton = (Button)findViewById(R.id.cs_search_button);
+		bannerProgress = (ProgressBar)findViewById(R.id.cs_banner_progress);
 		
 		// create auto-complete objects
 		courseNumbers = new HashSet<String>();
